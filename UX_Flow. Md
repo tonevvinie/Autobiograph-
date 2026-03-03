@@ -1,0 +1,168 @@
+# UX Flow Blueprint — Record
+
+This document defines the complete user experience for a reality-first, human-centered platform. Every screen, action, and interaction is designed to preserve truth, originality, and calm.
+
+---
+
+## 1. Bottom Navigation Bar (Persistent)
+
+- **Home / Explore** → Browse relevant boards  
+- **My Boards** → Access user-created boards  
+- **Record** → Create new Entry  
+
+No notifications, no likes, no follower counts.
+
+---
+
+## 2. Home / Explore Boards Screen
+
+**Layout:**  
+- Pinterest-style grid of board thumbnails  
+- Soft neutral background, calm spacing  
+- Each board shows:
+  - Title
+  - Optional description
+  - Number of pinned entries (optional, small, non-prominent)  
+
+**Interactions:**  
+- Tap board → enter Board View  
+- Pull-to-refresh is disabled  
+- Infinite scroll is disabled → use "Load more moments" button  
+
+**Algorithmic Notes:**  
+- Boards surfaced based on **user’s saved boards**, **adjacent boards**, and **temporal relevance**  
+- No trending, no virality, no recent-first bias  
+
+---
+
+## 3. Board View Screen
+
+**Layout:**  
+- Grid of pinned Entry thumbnails  
+- Each thumbnail = a still frame from the video  
+- Minimal text overlay (Entry title or timestamp)  
+
+**Interactions:**  
+- Tap Entry → Entry View  
+- Option to save Entry to your own boards  
+- No likes, comments optional but hidden by default  
+
+**Rules:**  
+- Entries appear ordered by **discoverability score** (continuity + specificity + board migration + saves)  
+- No visual indicators of popularity beyond personal relevance  
+
+---
+
+## 4. Entry View Screen
+
+**Layout:**  
+- Full-screen video playback  
+- Soft neutral interface  
+- Minimal controls:  
+  - **Save** (primary action)  
+  - Back to board  
+
+**Constraints:**  
+- Autoplay off  
+- No filters, no AI enhancement  
+- Only trimming allowed  
+- Environmental audio preserved  
+
+**Algorithmic Influence:**  
+- Continuous playback does not affect ranking  
+- Save counts feed into **resonance score**  
+
+---
+
+## 5. My Boards Screen
+
+**Layout:**  
+- List/grid of boards you own  
+- Shows number of entries pinned  
+- Option to create new board  
+
+**Interactions:**  
+- Tap board → Board View  
+- Tap create board → Board creation form  
+
+**Board Creation Form:**  
+- Title (required)  
+- Description (optional)  
+- Public / Private toggle  
+- Example prompt: “What moments belong here?”  
+
+---
+
+## 6. Record Entry Screen
+
+**Layout:**  
+- Single record button (center)  
+- Minimal UI to reduce distraction  
+
+**Constraints:**  
+- Must record live (no uploads initially)  
+- Duration flexible, no editing except trimming  
+- Environmental audio mandatory  
+- Single-take encouraged  
+
+**After Recording:**  
+- Option to pin Entry to one or more boards  
+- Save Entry to your own board  
+- Entry automatically timestamped (`capturedAt`)  
+
+---
+
+## 7. Save Flow (Primary Interaction)
+
+**Action:** Save another user’s Entry to your board  
+
+**Rules:**  
+- Only Save is encouraged; no likes, hearts, comments, or reactions as primary signals  
+- Saves contribute to **resonance score**  
+- No notifications are triggered  
+
+**Psychological Effect:**  
+- Reinforces quiet participation  
+- Truth and reality travel without performance pressure  
+
+---
+
+## 8. Onboarding Flow (First 5 Minutes)
+
+1. Welcome Screen  
+   - Message: “Record your moments. Nothing more.”  
+2. Prompt: “What are you documenting right now?” → stores in `bioCurrentFocus`  
+3. Board Creation Suggestion  
+   - Example boards: Quiet mornings, Daily work, Starting over  
+4. Record First Entry  
+   - Single button, minimal UI  
+5. Explore Boards  
+   - See calm grid of relevant boards  
+
+**Constraints:**  
+- No follower suggestions  
+- No trending entries  
+- No “new” panic  
+
+---
+
+## 9. Key Design Principles
+
+- Calm, neutral colors  
+- Soft grid spacing, Pinterest-style  
+- Minimal text  
+- Slow, deliberate discovery → no infinite scroll  
+- Temporal depth prioritized  
+- Truth and originality protected at every interaction  
+
+---
+
+## 10. Future Screens (Optional, Post-MVP)
+
+- Comment or Reflect → hidden by default, only for context  
+- Profile → archive view of boards and entries, no stats displayed  
+- Settings → privacy, archive export, no notifications  
+
+---
+
+**End of UX Flow**
